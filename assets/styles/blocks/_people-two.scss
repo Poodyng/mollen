@@ -1,0 +1,141 @@
+.people-two {
+    background: #F7F9FC;
+    padding: 90px 0 120px;
+    &__items {
+        padding-left: 70px;
+    }
+
+    &__text-orng {
+        margin-bottom: -250px;
+        position: relative;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        color: #0E0E0C;
+        font-family: Source Sans Pro;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        &::after {
+            content: '';
+            width: 26px;
+            height: 88px;
+            position: absolute;
+            background: url(/assets/images/icons/kvadrat-orng.png);
+            bottom: 100px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    &__block-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding-bottom: 45px;
+        border-bottom: 1px dashed #2F3034;
+    }
+
+    &__card {
+        padding: 1px 0 10px 1px;
+        transition: 0.2s ease;
+        &:hover {
+            padding: 1px 0 10px 1px;
+            outline: 2px solid #ccccc7;
+            cursor: pointer;
+            .people-two__sub-title {
+                color: #d86011;
+            }
+        }  
+    }
+
+    &__img {
+        width: 97%;
+    }
+
+    &__mini-block {
+        display: flex;
+        align-items: center;
+        gap: 16px;  
+    }
+
+    &__block-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__title {
+        margin: 16px 0;
+        max-width: 100px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__sub-title {
+        max-width: 150px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__block-free {
+        padding-top: 90px;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__block-card-free {
+        display: flex;
+        gap: 1px;
+        padding-bottom: 60px;
+        border-bottom: 1px dashed #2F3034;
+    }
+
+    &__text-box {
+        margin-left: -60px;
+    }
+
+    &__blockk-img {   
+        z-index: 1;
+        position: relative;
+        &::after {
+            content: '';
+            width: 250px;
+            height: 190px;
+            position: absolute;
+            background: url(/assets/images/icons/photo-golnyck-orgn.svg) no-repeat;
+            bottom: 2%;
+            left: 0%;
+            z-index: -1;
+        }
+    }
+
+    &__imgg {
+        width: 216px;
+    }
+
+    &__block-card-freee {
+        display: flex;
+        gap: 25px;
+        padding: 0 0 60px 150px;
+        border-bottom: 1px dashed #2F3034;
+    }
+
+    &__cardd {
+        max-width: 405px;
+        padding: 1px 0 10px 0px;
+        transition: 0.2s ease;
+        &:hover {
+            padding: 1px 0 10px 0px;
+            outline: 1px solid #ccccc7;
+            cursor: pointer;
+            .people-two__sub-title {
+                color: #d86011;
+            }
+        }  
+    }
+}

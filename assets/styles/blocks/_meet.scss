@@ -1,0 +1,150 @@
+.meet {
+    padding: 90px 0 120px;
+    background: #F7F9FC;
+    &__items {
+
+    }
+
+    &__header {
+        padding-bottom: 71px;
+    }
+
+    &__title {
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+
+    }
+
+    &__sub-title {
+        margin-top: 40px;
+        max-width: 430px;
+        color: #DA5D24;
+        font-family: Source Sans Pro;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__block {
+
+    }
+
+    &__text-orng {
+        margin-bottom: -250px;
+        position: relative;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        color: #0E0E0C;
+        font-family: Source Sans Pro;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        &::after {
+            content: '';
+            width: 26px;
+            height: 88px;
+            position: absolute;
+            background: url(/assets/images/icons/kvadrat-orng.png);
+            bottom: 135px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    &__block-card {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 90px;
+        border-bottom: 1px dashed #2F3034;
+    }
+
+    &__card {
+        display: flex;
+        gap: 45px;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            width: 250px;
+            height: 190px;
+            position: absolute;
+            background: url(/assets/images/icons/photo-golnyck-orgn.svg) no-repeat;
+            bottom: 2%;
+            left: 25%;
+            z-index: -1;
+        }
+    }
+
+    &__imgg {
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            width: 250px;
+            height: 196px;
+            position: absolute;
+            background: url(/assets/images/icons/blue-golnyck.png) no-repeat;
+            bottom: -8%;
+            left: 9.1%;
+            z-index: -1;
+        } 
+    }
+
+    &__card-text {
+
+    }
+
+    &__word {
+        max-width: 200px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__mini-block {
+        margin: 16px 0;
+        display: flex;
+        gap: 16px;
+        transition: 0.3s ease;
+        &:hover {
+            gap: 5px;
+        }
+    }
+
+    &__sub-word {
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            color: #919ece;   
+        }
+    }
+
+    &__text {
+        margin-bottom: 32px;
+        max-width: 224px;
+        color: var(--light-gray-dark, #737B7D);
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__img-in {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

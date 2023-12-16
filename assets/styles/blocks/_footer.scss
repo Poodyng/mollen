@@ -1,0 +1,129 @@
+.footer {
+
+    &__item {
+        padding: 32px 0 22px;
+        background: url(/assets/images/icons/karta.png) right;
+    }
+
+    &__items {
+        padding: 24px 39px 31px 73px;
+        opacity: 0.95;
+        background: #FFF;
+        display: inline-grid;
+        grid-template-columns: 120px 265px;
+    }
+
+    &__left {
+
+    }
+
+    &__right {
+
+    }
+
+    &__title {
+        color: #313131;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Source Sans Pro;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__list {
+        margin: 27px 0 16px;
+    }
+
+    &__sub-title {
+        margin: 5px 0;
+        color: #313131;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        transition: 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            color: #807777;
+        }
+    }
+
+    &__number {
+        margin-bottom: 16px;
+        color: #313131;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        transition: 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            color: #807777;
+        }
+    }
+
+    &__text-orng {
+        position: relative;
+        padding-bottom: 13px;
+        color: #FF7C40;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        transition: 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            color: #b46f4f;
+        }
+        &::after {
+            content: '';
+            width: 305px;
+            height: 1px;
+            border-bottom: 1px solid #313131;
+            top: 100%;
+            right: -14%;
+            position: absolute;
+        }
+    }
+
+    &__sub-text {
+
+    }
+
+    &__box-btn {
+        padding-top: 19px;
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__so-footer {
+        padding: 24px 0;
+        opacity: 0.95;
+        background: #06255B;
+    }
+
+    &__so-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__so-title {
+        color: #FFF;
+        font-family: Source Sans Pro;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        transition: 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            color: #d4cccc;
+        }
+    }
+}

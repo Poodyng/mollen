@@ -1,0 +1,129 @@
+.benefit {
+    padding-bottom: 70px;
+    background: #F7F9FC;
+    &__items {
+        
+    }
+
+    &__block-header {
+        padding: 168px 0 88px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 445px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__sub-title {
+        max-width: 437px;
+        color: var(--light-gray-dark, #737B7D);
+        font-family: Source Sans Pro;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        z-index: 1;
+    }
+
+    &__word {
+        max-width: 435px;
+    }
+
+    &__block {
+        display: flex;
+    }
+
+    &__img {
+        width: 70%; 
+    }
+
+    &__block-card {
+        margin-bottom: -145px;
+        margin-left: 278px;
+        background-color: #ffffff;
+        padding: 17px 34px 10px 60px;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__card {
+        background-color: #6c6c6d;
+        z-index: 1;
+        &:hover {
+            cursor: pointer;
+
+            .benefit__card-text-number {
+                color: #2F3034;
+                transition: 0.3s ease;
+            }
+            .benefit__sub-word {
+                color: #2F3034;
+                transition: 0.3s ease;
+            }
+        }
+    }
+
+    &__line {
+        border-right: 1px dashed #737B7D;
+        z-index: 1;
+    }
+
+    &__card-text-number {
+        color: #A8ACAD;
+        font-family: Source Sans Pro;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__sub-number {
+        font-size: 20px;
+    }
+
+    &__sub-word {
+        max-width: 217px;
+        color: #A8ACAD;
+        font-family: Source Sans Pro;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__block-right {
+        z-index: 1;
+        margin-left: -440px;
+        margin-top: 260px;    
+    }
+
+    &__left {
+        background: #F7F9FC;
+    }
+
+    &__block-btn {
+        display: flex;
+    }
+
+    &__text {
+        margin: 23px 0 20px;
+        max-width: 394px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__sub-text {
+        max-width: 331px;
+        color: var(--light-gray-dark, #737B7D);
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

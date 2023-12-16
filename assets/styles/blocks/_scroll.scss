@@ -1,0 +1,147 @@
+.scroll {
+    background: #F7F9FC;
+    &__items {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__errow {
+        padding-bottom: 75px;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+
+            .scroll__img-errow {
+                transform: scale(1.5);
+                transition: 0.5s ease;
+            }
+        }
+    }
+
+    &__img-errow {
+
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: #53565A;
+        font-family: Source Sans Pro;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__block-text {
+        padding: 75px 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__sub-title {
+        margin-bottom: 24px;
+        max-width: 536px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__p-title {
+        max-width: 439px;
+        color: var(--light-gray-dark, #737B7D);
+        font-family: Source Sans Pro;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__block-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    &__card {
+        padding: 55px 109px 187px 37px;
+        overflow: hidden;
+        height: 488px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid #E2E2E2;
+        position: relative;
+        &::before {
+            content: '';
+            width: 315px;
+            height: 132px;
+            position: absolute;
+            background: url(/assets/images/icons/gora-one.png) no-repeat;
+            bottom: 0;
+            right: 0;
+        }
+        &::after {
+            content: '';
+            display: none;
+            width: 479px;
+            height: 739px;
+            background: url(/assets/images/icons/stroyka.jpg) no-repeat;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        &:hover {
+            transition: 0.5s ease;
+            cursor: pointer;
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: block;
+                z-index: -1;
+            }
+            .scroll__number {
+                transition: 0.3s ease;
+                color: #E2E2E2;
+            }
+            .scroll__sub-number {
+                transition: 0.3s ease;
+                color: #E2E2E2;
+            }
+            .scroll__word {
+                transition: 0.3s ease;
+                color: #E2E2E2;
+            }
+        }
+    }
+
+    &__block-word {
+        display: flex;
+        padding-bottom: 90px;
+    }
+
+    &__number {
+        color: var(--Corporate-Orange, #DA5D24);
+        font-family: Mulish;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    &__sub-number {
+        color: var(--Corporate-Orange, #DA5D24);
+        font-family: Mulish;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    &__word {
+        padding-top: 90px;
+        color: var(--Headline-2, #2F3034);
+        font-family: Mulish;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 800;
+    }
+}

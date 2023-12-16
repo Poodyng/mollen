@@ -1,0 +1,239 @@
+.services {
+    padding-top: 104px;
+    background: var(--Corporate-blue, #06255B);
+    &__items {
+        position: relative;
+        &::after {
+            content: '';
+            width: 510px;
+            height: 1021px;
+            background: url(/assets/images/sseryi-golnyck.png) no-repeat;
+            position: absolute;
+            right: 0;
+            bottom: 56%;
+        }
+    }
+
+    &__block-word {
+        padding-left: 300px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        max-width: 408px;
+        color: var(--White, #FFF);
+        font-family: Source Sans Pro;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    &__sub-title {
+        max-width: 384px;
+        color: var(--White, #FFF);
+        font-family: Source Sans Pro;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    &__block-img {
+        position: relative;
+        &::before {
+            content: '';
+            width: 715px;
+            height: 500px;
+            background: url(/assets/images/mini-baza.png) no-repeat;
+            position: absolute;
+            bottom: 66%;
+            left: 53%;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin-top: -807px;
+    }
+
+    &__block {
+        position: relative;
+        margin-top: -2921px;
+        margin-right: 200px;
+        transform: rotate(135deg);
+        display: grid;
+        grid-template-columns: repeat(4, 264px);
+        grid-template-rows: repeat(3, 264px);
+        gap: 36px;
+        z-index: 1;
+        &::after {
+            content: '';
+            width: 125px;
+            height: 37px;
+            transform: rotate(224deg);
+            background: url(/assets/images/five-number.png) no-repeat;
+            position: absolute;
+            top: 53%;
+            left: 82%;       
+        }
+    }
+
+    &__box-one {
+        grid-area: 1 / 2 / 2 / 2;
+        border: 0.986px solid #D5D5D5;
+        background: #FFF;
+        width: 264px;
+        height: 264px;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            transform: rotate(180deg);
+            transition: 1s ease;
+            .services__word {
+                transition: 1s ease;
+                transform: rotate(177deg);
+            }
+            .services__number {
+                color: #f55106;
+                transform: rotate(135deg); 
+            } 
+        }  
+    }
+
+    &__box-two {
+        grid-area: 2 / 2 / 2 / 1;
+        border: 0.986px solid #D5D5D5;
+        background: #FFF;
+        width: 264px;
+        height: 264px;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            transform: rotate(180deg);
+            transition: 1s ease;
+            .services__word {
+                transition: 1s ease;
+                transform: rotate(177deg);
+            }
+            .services__number {
+                color: #f55106;
+                transform: rotate(135deg); 
+            } 
+        }   
+    }
+
+    &__box-free {
+        grid-area: 2 / 2 / 3 / 2;
+        border: 0.986px solid #D5D5D5;
+        background: #FFF;
+        width: 264px;
+        height: 264px;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            transform: rotate(180deg);
+            transition: 1s ease;
+            .services__word {
+                transition: 1s ease;
+                transform: rotate(177deg);
+            }
+            .services__number {
+                color: #f55106;
+                transform: rotate(135deg); 
+            } 
+        }    
+    }
+
+    &__box-four {
+        grid-area: 2 / 3 / 3 / 4;
+        border: 0.986px solid #D5D5D5;
+        background: #FFF;
+        width: 264px;
+        height: 264px;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            transform: rotate(180deg);
+            transition: 1s ease;
+            .services__word {
+                transition: 1s ease;
+                transform: rotate(177deg);
+            }
+            .services__number {
+                color: #f55106;
+                transform: rotate(135deg); 
+            } 
+        }  
+    }
+
+    &__box-five {
+        grid-area: 2 / 4 / 4 / 5;
+        border: 0.986px solid #D5D5D5;
+        background: #FFF;
+        width: 264px;
+        height: 264px;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            transform: rotate(180deg);
+            transition: 1s ease;
+            .services__word {
+                transition: 1s ease;
+                transform: rotate(177deg);
+            }
+            .services__number {
+                color: #f55106;
+                transform: rotate(135deg); 
+            } 
+        }   
+    }
+
+    &__box-six {
+        grid-area: 3 / 4 / 4 / 4;
+        border: 0.986px solid #D5D5D5;
+        background: #FFF;
+        width: 264px;
+        height: 264px;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            transform: rotate(180deg);
+            transition: 1s ease;
+            .services__word {
+                transition: 1s ease;
+                transform: rotate(177deg);
+            }
+            .services__number {
+                color: #f55106;
+                transform: rotate(135deg); 
+            } 
+        }   
+    }
+
+    &__items-text {
+        transition: 1s ease;
+        text-align: -webkit-center;
+        padding: 0 107px 78px 0;
+        transform: rotate(225deg); 
+    }
+
+    &__word {
+        margin-bottom: 10px;
+        color: #313131;
+        font-family: Source Sans Pro;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    &__number {
+        font-size: 25px;
+        transition: 1s ease;
+        width: 12px;
+        height: 12px;
+        color: #DA5D24;
+        transform: rotate(270deg); 
+    }
+}

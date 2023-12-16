@@ -1,0 +1,120 @@
+.thomas {
+    padding: 10px 0 90px;
+    background: #F7F9FC;
+    &__items {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__header {
+
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__sub-title {
+        max-width: 290px;
+        color: #737B7D;
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__list {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__img {
+        transition: 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.4;
+        }
+    }
+
+    &__block-content {
+
+        &:hover {
+            cursor: pointer;
+
+            .thomas__img-verh {
+                margin-bottom: -60px;
+                transition: 1s ease;
+            }
+            .thomas__img-nyz {
+                margin-top: -30px;
+                transition: 1s ease;
+            }
+            .thomas__logo-img {
+                filter:drop-shadow(16px 7px 8px #32c239);
+                transition: 1s ease;
+            }
+            .thomas__word {
+                transition: 1s ease;
+                color: #FF7C40;
+            }
+            .thomas__sub-word {
+                transition: 0.3s ease;
+                padding: 5 0px;
+                max-width: 96px;
+                border-bottom: 2px solid #FF7C40;
+            }
+        }
+    }
+
+    &__sub-block {
+        margin-left: 70px;
+    }
+
+    &__logo-img {
+        width: 35%;
+    }
+
+    &__word {
+        margin: 40px 0 87px;
+        max-width: 579px;
+        color: var(--Body-Text-2, #4A4B4E);
+        font-family: Minion Pro;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    &__sub-word {
+        color: var(--Headline-2, #2F3034);
+        font-family: Source Sans Pro;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__word-orng {
+        margin-top: 14px;
+        color: #FF7C40;
+        font-family: Source Sans Pro;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    &__box-items {
+        margin-left: -117px;
+        display: flex;
+        align-items: baseline;
+        gap: 50px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+    }
+}

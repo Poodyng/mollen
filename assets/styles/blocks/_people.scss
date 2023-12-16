@@ -1,0 +1,80 @@
+.people {
+    background: #F7F9FC;
+    padding: 90px 0;
+    &__items {
+        padding-left: 70px;
+    }
+
+    &__text-orng {
+        margin-bottom: -250px;
+        position: relative;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        color: #0E0E0C;
+        font-family: Source Sans Pro;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        &::after {
+            content: '';
+            width: 26px;
+            height: 88px;
+            position: absolute;
+            background: url(/assets/images/icons/kvadrat-orng.png);
+            bottom: 48px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    &__block-card {
+        display: flex;
+        padding-bottom: 45px;
+        border-bottom: 1px dashed #2F3034;
+        max-width: 1090px;
+    }
+
+    &__card {
+        padding: 1px 1px 10px 1px;
+        transition: 0.2s ease;
+        &:hover {
+            padding: 1px 1px 10px 1px;
+            outline: 1px solid #ccccc7;
+            cursor: pointer;
+            .people__sub-title {
+                color: #d86011;
+            }
+        }  
+    }
+
+    &__mini-block {
+        display: flex;
+        align-items: center;
+        gap: 16px;  
+    }
+
+    &__block-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__title {
+        margin: 16px 0;
+        max-width: 100px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__sub-title {
+        max-width: 150px;
+        color: #000;
+        font-family: Source Sans Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

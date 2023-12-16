@@ -1,0 +1,68 @@
+.header {
+    padding: 46px 0 46px 150px;
+    background: linear-gradient(165deg, #06255B 0%, rgba(6, 37, 91, 0) 59%);
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        transition: 0.1s ease;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__title {
+        color: #FFF;
+        font-family: Source Sans Pro;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        transition: 0.2s ease;
+        &:hover {
+            cursor: pointer;
+            color: #DA5D24;
+        }
+    }
+
+    &__block-btn {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__block-speech {
+        display: flex;
+        gap: 12px;
+        padding: 18px 17px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    &__speech {
+        display: flex;
+        gap: 6px;
+    }
+
+    &__sub-title {
+        color: #334e7c;
+        font-family: Source Sans Pro;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        transition: 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            border-bottom: 1px solid #06255B;
+            color: #06255B;
+        }
+    }
+}

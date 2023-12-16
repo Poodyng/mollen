@@ -1,0 +1,96 @@
+.hero {
+    padding: 160px 0 281px;
+    background: linear-gradient(69deg, #06255B 0%, rgba(6, 37, 91, 0.00) 43%);
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        &::after {
+            content: '';
+            width: 310px;
+            height: 927px;
+            background: url(/assets/images/icons/free-golnyck.png) no-repeat;
+            position: absolute;
+            right: 0; 
+            top: 13%;
+            z-index: 1;
+        }
+    }
+
+    &__block-text {
+        padding-top: 70px;
+        z-index: 1;
+    }
+
+    &__title {
+        max-width: 762px;
+        color: #F7F7F7;
+        font-family: Source Sans Pro;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+    }
+
+    &__sub-title {
+        margin: 27px 0;
+        max-width: 623px;
+        color: #FFF;
+        font-family: Source Sans Pro;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+    }
+
+    &__word {
+        max-width: 489px;
+    }
+
+    &__block-btn {
+       display: flex;
+       align-items: center;
+       gap: 16px; 
+    }
+
+    &__block-img {
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        grid-column-gap: 25px;
+        grid-row-gap: 4em;
+        z-index: 1;
+    }
+
+    &__img-one {
+        grid-column: 2;
+        grid-row: 1;
+        transition: 0.4s ease;
+        &:hover {
+            cursor: pointer;
+            top: 50%;                         
+            transform: scale(1.5);
+        }
+    }
+
+    &__img-two {
+        grid-column: 1;
+        grid-row: 2 / 4;
+        transition: 0.4s ease;
+        &:hover {
+            cursor: pointer;
+            top: 50%;                         
+            transform: translate(0, -20%);
+        }
+    }
+
+    &__img-free {
+        grid-column: 2 / 4;
+        grid-row: 3;
+        transition: 0.4s ease;
+        &:hover {
+            cursor: pointer;
+            top: 50%;                         
+            transform: translate(0, -100%);
+        }
+    }
+}

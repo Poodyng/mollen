@@ -1,0 +1,139 @@
+@import './reset';
+@import './mixins';
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url(/assets/images/hero-title.png) no-repeat;
+    background-size: 100%;
+    margin-top: 5px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.btn--orng {
+    padding: 19px 38px;
+    color: var(--light-white, #FFF);
+    background: #DA5D24;
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    transition: 0.4s ease;
+    &:hover {
+        cursor: pointer;
+        background: rgba(186, 78, 29, 1);
+    }
+}
+
+.btn--hero {
+    padding: 16px 18px;
+    outline: 2px solid #FFF;
+    background: rgba(6, 37, 91, 0.60);
+    color: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    transition: 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        color: #06255B;
+        background: #FFF;
+    }
+}
+
+.btn--hery {
+    padding: 18px 18px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #06255B;
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    transition: 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        background: #ABB5C7;
+        color: #FFF;
+    }
+}
+
+.btn--left {
+    padding: 25px 33px;
+    color: #FFF;
+    font-size: 25px;
+    background-color: rgba(6, 37, 91, 1);
+    transition: 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        background: #1D4A99;
+    }
+}
+
+.btn--right {
+    padding: 25px 33px;
+    color: #FFF;
+    font-size: 25px;
+    background-color: rgba(218, 93, 36, 1);
+    transition: 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(145, 57, 16);
+    }
+}
+
+.btn--min {
+    padding: 3px 12px;
+    color: #FFF;
+    background-color: #DA5D24;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    &:hover {
+        cursor: pointer;
+        outline: 1px solid #1D4A99;
+        color: #DA5D24;
+        background-color: #FFF;
+    }
+}
+
+.btn--circle-left {
+    padding: 13px 16px;
+    border-radius: 50px;
+    border: 1px solid #DA5D24;
+    color: #FF7C40;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    transition: 0.4s ease;
+    &:hover {
+        cursor: pointer;
+        color: #030303;
+        border: 1px solid #030303;
+        background-color: #DA5D24;
+    }
+}
+
+.btn--circle-right {
+    padding: 13px;
+    border-radius: 50px;
+    border: 1px solid #DA5D24;
+    color: #FF7C40;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    transition: 0.4s ease;
+    &:hover {
+        cursor: pointer;
+        color: #030303;
+        border: 1px solid #030303;
+        background-color: #DA5D24;
+    }
+}
